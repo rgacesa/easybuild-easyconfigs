@@ -29,7 +29,9 @@ dependencies = [
 #DEBUG: Parallel build tends to fail.
 # parallel = 1
 
-bm_executables = ['megahit']
+# requires megahit, megahit_asm_core, megahit_toolkit and megahit_sdbg_build 
+bm_executables = ['megahit','megahit_asm_core','megahit_toolkit','megahit_sdbg_build']
+
 files_to_copy = [(['%s' % x for x in bm_executables], 'bin')]
 
 # Check if all binaries from the suite are present.
