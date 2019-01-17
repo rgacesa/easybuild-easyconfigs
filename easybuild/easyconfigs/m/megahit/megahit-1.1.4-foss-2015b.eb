@@ -21,20 +21,18 @@ checksums = [
     'ecd64c8bfa516ef6b19f9b2961ede281ec814db836f1a91953c213c944e1575f',  #v1.1.4.tar.gz
 ]
 
-#dependencies = [
-#    ('BLAST+', '2.7.1'),
-#    ('SRPRISM', 'v3.0.0'),
-#]
+dependencies = [
+   ('zlib', '1.2.11'),
+   ('Python','2.7.11','',('foss','2015b')), 
+]
 
-# Parallel build tends to fail.
-parallel = 1
+#DEBUG: Parallel build tends to fail.
+# parallel = 1
 
-bm_executables = ['bmdiff', 'bmdump', 'bmfilter', 'bmtagger.sh', 'bmtool', 'extract_fullseq']
+bm_executables = ['megahit']
 files_to_copy = [(['bmtagger/%s' % x for x in bm_executables], 'bin')]
 
-#
 # Check if all binaries from the suite are present.
-#
 sanity_check_paths = {
     'files': ['bin/%s' % x for x in bm_executables],
     'dirs': [],
