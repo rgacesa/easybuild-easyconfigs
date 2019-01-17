@@ -6,7 +6,7 @@
 easyblock = 'MakeCp'
 
 name = 'megahit'
-version = 'v1.1.4'
+version = '1.1.4'
 
 homepage = 'https://github.com/voutcn/megahit'
 description = """MEGAHIT: An ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph"""
@@ -16,7 +16,7 @@ toolchainopts = {'usempi': True}
 
 #https://github.com/voutcn/megahit/archive/v1.1.4.tar.gz
 source_urls = ['https://github.com/voutcn/megahit/archive/']
-sources =[('%s.tar.gz' % (version))]
+sources =[('v%s.tar.gz' % (version))]
 checksums = [
     'ecd64c8bfa516ef6b19f9b2961ede281ec814db836f1a91953c213c944e1575f',  #v1.1.4.tar.gz
 ]
