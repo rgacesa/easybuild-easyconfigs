@@ -12,31 +12,31 @@ homepage = 'http://cab.spbu.ru/software/spades/'
 description = """Genome and metagenome assembler"""
 
 toolchain = {'name': 'foss', 'version': '2015b'}
-
+# source
+# http://cab.spbu.ru/files/release3.13.0/SPAdes-3.13.0.tar.gz
 source_urls = ['http://cab.spbu.ru/files/release%(version)s']
+
 sources = [SOURCE_TAR_GZ]
-checksums = ['' # ]
+checksums = ['c63442248c4c712603979fa70503c2bff82354f005acda2abc42dd5598427040'  # SPAdes-3.13.0.tar.gz]
 
+# dependencies
 builddependencies = [('CMake', '3.9.1')]
-
 dependencies = [
     ('zlib', '1.2.11'),
     ('bzip2', '1.0.6'),
-    ('libreadline', '7.0'),
+    ('libreadline', '6.3'),
 ]
-
+# where is src
 start_dir = 'src'
 
 separate_build_dir = True
-
+# config
 configopts = ' -DBoost_NO_BOOST_CMAKE=ON'
-
+# sanity check
 sanity_check_commands = [('spades.py', '--test')]
-
 sanity_check_paths = {
     'files': ['bin/%s' % x for x in ['bwa-spades', 'dipspades', 'dipspades.py',
                                      'spades', 'spades.py']],
     'dirs': [],
 }
-
 moduleclass = 'bio'
