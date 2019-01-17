@@ -3,6 +3,7 @@
 # by R.Gacesa (UMCG,2019)
 #
 # ==============================================================
+
 easyblock = "CMakeMake"
 
 name = 'SPAdes'
