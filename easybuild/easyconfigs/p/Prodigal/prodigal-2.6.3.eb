@@ -21,6 +21,10 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 source_urls = ['https://github.com/hyattpd/Prodigal/archive/']
 sources = ['v%(version)s.tar.gz']
 
+checksums = [
+   '89094ad4bff5a8a8732d899f31cec350f5a4c27bcbdd12663f87c9d1f0ec599f', # v2.6.3.tar.gz
+]
+
 files_to_copy = [
     (['prodigal'], 'bin'),
     (['*.h'], 'include'),
