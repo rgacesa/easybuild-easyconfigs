@@ -30,7 +30,7 @@ dependencies = [
 # parallel = 1
 
 bm_executables = ['megahit']
-files_to_copy = [(['bmtagger/%s' % x for x in bm_executables], 'bin')]
+files_to_copy = [(['%s' % x for x in bm_executables], 'bin')]
 
 # Check if all binaries from the suite are present.
 sanity_check_paths = {
