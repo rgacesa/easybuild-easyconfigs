@@ -20,11 +20,12 @@ sources = ['SPAdes-%(version)s.tar.gz']
 checksums = ['c63442248c4c712603979fa70503c2bff82354f005acda2abc42dd5598427040']  # SPAdes-3.13.0.tar.gz]
 
 # dependencies
-builddependencies = [('CMake', '3.9.1')]
+builddependencies = [('CMake', '3.7.2')]
 dependencies = [
     ('zlib', '1.2.11'),
     ('bzip2', '1.0.6'),
     ('libreadline', '6.3'),
+    ('GCC','5.4.0-2.26'),
 ]
 # where is src
 start_dir = 'src'
