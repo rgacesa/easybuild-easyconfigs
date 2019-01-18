@@ -27,7 +27,7 @@ versionsuffix = "-%s-%s" % (python, pyver)
 
 dependencies = [
     (python, pyver),
-    ('matplotlib', '1.4.3', versionsuffix),
+    ('matplotlib', '1.5.1', versionsuffix),
 ]
 
 pyshortver = '.'.join(pyver.split('.')[:2])
