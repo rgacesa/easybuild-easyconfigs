@@ -21,6 +21,7 @@ checksums = ['941a3e7ad5f1eab93eedbafd993ccd204f3533264a46c7e9cbc24c4e69441995']
 
 dependencies = [
     ('Python', '2.7.11'), 
+    ('Cython','0.24.1','',('Python-2.7.11','')),
 ]
 
 sanity_check_paths = {
