@@ -12,7 +12,7 @@ homepage = 'https://github.com/COMBINE-lab/%(namelower)s'
 description = """Salmon is a wicked-fast program to produce a highly-accurate,
  transcript-level quantification estimates from RNA-seq data."""
 
-toolchain = {'name': 'foss', 'version': '2016b'}
+toolchain = {'name': 'foss', 'version': '2015b'}
 toolchainopts = {'pic': True, 'openmp': True}
 
 sources = ['v%(version)s.tar.gz']
