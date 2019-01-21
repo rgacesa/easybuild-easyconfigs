@@ -4,7 +4,7 @@
 
 easyblock = "PackedBinary"
 
-name = 'Trim_Galore'
+name = 'TrimGalore'
 version = '0.5.0'
 
 homepage = 'http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/'
