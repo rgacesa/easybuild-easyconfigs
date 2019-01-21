@@ -14,14 +14,19 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 source_urls = [SOURCEFORGE_SOURCE]
 sources = ['%(name)s%(version)s.tar.gz']
 
-buildopts = 'CC="$CC" CFLAG="$CFLAGS" fgs && chmod -R go+rx *.py *.pl train example'
+buildopts = 'CC="$CC" CFLAG="$CFLAGS" fgs'
 
-files_to_copy = ['FragGeneScan', 'FGS_gff.py', 'post_process.pl', 'run_FragGeneScan.pl', 'example', 'train']
+files_to_copy = ['FragGeneScan', 'run_FragGeneScan.pl', 'example', 'train']
 
 modextrapaths = {'PATH': ['']}
 
+postinstallcmds = [ 
+    'for executable in $(ls -1 %(installdir)s/bin/*.{bash,pl,py,R,sh} 2> /dev/null); do chmod 775 ${executable}; done', 
+    'chmod -R g+rwX,o+rX,o-w %(installdir)s/*' 
+] 
+
 sanity_check_paths = {
-    'files': ['FGS_gff.py', 'FragGeneScan', 'post_process.pl', 'run_FragGeneScan.pl'],
+    'files': ['FragGeneScan', 'run_FragGeneScan.pl'],
     'dirs': ['example', 'train'],
 }
 
