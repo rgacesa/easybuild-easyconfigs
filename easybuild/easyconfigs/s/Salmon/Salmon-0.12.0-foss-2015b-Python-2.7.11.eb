@@ -22,7 +22,7 @@ checksums = ['91ebd1efc5b0b4c12ec6babecf3c0b79f7102e42b8895ca07c8c8fea869fefa3']
 
 #patches = ['%(name)s-%(version)s_skip-included-Jellyfish.patch']
 
-builddependencies = [('CMake', '3.7.2')]
+builddependencies = [('CMake', '3.13.3')]
 
 dependencies = [
 
