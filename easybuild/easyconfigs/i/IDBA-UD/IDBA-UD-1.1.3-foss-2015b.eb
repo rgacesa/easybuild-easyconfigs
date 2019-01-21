@@ -26,12 +26,10 @@ sources = ['idba-%(version)s.tar.gz']
 checksums = ['030e24463c6d725c1c202baabf773b605b51e310844fd0f27f4688ecfbae26d0'] #idba-1.1.3.tar.gz
 
 prebuildopts = './configure && '
-
-# we delete every .o file which is left in bin folder
+# cleanup
 buildopts = ' && rm -fr bin/*.o && rm -fr bin/Makefile*'
-
-files_to_copy = ["bin", "script", "README", "ChangeLog", "NEWS"]
-
+# copy build files
+files_to_copy = ["bin", "script", "ChangeLog"]
 sanity_check_paths = {
     'files': ["bin/%s" % x for x in ["idba", "idba_hybrid", "idba_tran",
                                      "idba_ud", "parallel_blat", "idba_tran_test"]],
