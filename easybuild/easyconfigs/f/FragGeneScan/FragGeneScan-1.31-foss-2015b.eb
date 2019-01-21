@@ -14,6 +14,8 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 source_urls = [SOURCEFORGE_SOURCE]
 sources = ['%(name)s%(version)s.tar.gz']
 
+checksums = ['cd3212d0f148218eb3b17d24fcd1fc897fb9fee9b2c902682edde29f895f426c']
+
 buildopts = 'CC="$CC" CFLAG="$CFLAGS" fgs'
 
 files_to_copy = ['FragGeneScan', 'run_FragGeneScan.pl', 'example', 'train']
