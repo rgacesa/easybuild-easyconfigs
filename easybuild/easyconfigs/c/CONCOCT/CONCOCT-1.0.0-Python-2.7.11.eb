@@ -10,15 +10,13 @@ version = '1.0.0'
 homepage = 'https://github.com/BinPro/CONCOCT'
 description = """A program for unsupervised binning of metagenomic contigs by using nucleotide composition, coverage data in multiple samples and linkage data from paired end reads."""
 
-#toolchain = {'name': 'f', 'version': '1.4.10'}
 toolchain = {'name': 'dummy', 'version': 'dummy'}
 
 source_urls = ['https://github.com/BinPro/CONCOCT/archive/']
-sources = [%(version)s.tar.gz]
+sources = ['%(version)s.tar.gz']
 
 python = "Python"
 pythonversion = '2.7.1'
-versionsuffix = ''
 
 #cython numpy scipy biopython pandas pip scikit-learn
 dependencies = [
