@@ -36,8 +36,7 @@ configopts = ' -DBoost_NO_BOOST_CMAKE=ON'
 # sanity check
 sanity_check_commands = [('spades.py', '--test')]
 sanity_check_paths = {
-    'files': ['bin/%s' % x for x in ['bwa-spades', 'dipspades', 'dipspades.py',
-                                     'spades', 'spades.py']],
+    'files': ['bin/%s' % x for x in ['metaspades.py','spades-bwa','spades-core','spades.py']],
     'dirs': [],
 }
 moduleclass = 'bio'
