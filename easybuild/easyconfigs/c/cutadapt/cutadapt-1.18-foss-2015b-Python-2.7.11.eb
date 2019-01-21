@@ -7,6 +7,8 @@ easyblock = 'PythonPackage'
 
 name = 'cutadapt'
 version = '1.18'
+versionsuffix = '-Python-2.7.11'
+
 homepage = 'https://github.com/marcelm/cutadapt'
 description = """Cutadapt finds and removes adapter sequences, primers, poly-A tails and
  other types of unwanted sequence from your high-throughput sequencing reads."""
