@@ -16,7 +16,7 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 
 #https://github.com/FelixKrueger/TrimGalore/archive/0.5.0.tar.gz
 source_urls = ['https://github.com/FelixKrueger/TrimGalore/archive/']
-sources = ['v%(version)s.zip']
+sources = ['%(version)s.zip']
 checksums = ['9a7966bcfdea5d8c4f14c669904fb44693ac5d9392caa4d49dd11254a0a6753d'] # 0.5.0.tar.gz
 
 install_cmd = "cp -a * %(installdir)s && chmod +x %(installdir)s/%(namelower)s && "
