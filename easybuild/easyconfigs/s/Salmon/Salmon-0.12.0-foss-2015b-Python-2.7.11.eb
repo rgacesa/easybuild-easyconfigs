@@ -25,7 +25,8 @@ checksums = ['91ebd1efc5b0b4c12ec6babecf3c0b79f7102e42b8895ca07c8c8fea869fefa3']
 builddependencies = [('CMake', '3.13.3')]
 
 dependencies = [
-
+    #Salmon requires g++ 5.2 or greater
+    ('GCCcore','6.4.0'),
     ('Boost', '1.60.0', versionsuffix),
     ('tbb', '2018_U3'),
     ('Jellyfish', '2.2.10'),
