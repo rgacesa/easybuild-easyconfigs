@@ -21,7 +21,7 @@ pythonversion = '2.7.1'
 
 #cython numpy scipy biopython pandas pip scikit-learn
 dependencies = [
-    ('PythonPlus', '2.7.1','-v17.06.1',('foss','2015b')),
+    ('PythonPlus', '2.7.11','-v17.06.1',('foss','2015b')),
 
 ]
 
