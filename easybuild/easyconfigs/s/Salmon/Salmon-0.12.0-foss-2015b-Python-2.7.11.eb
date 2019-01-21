@@ -30,6 +30,7 @@ dependencies = [
     ('Boost', '1.60.0', versionsuffix),
     ('tbb', '2018_U3'),
     ('Jellyfish', '2.2.10'),
+    ('Autoconf','2.69')
 ]
 
 sanity_check_paths = {
