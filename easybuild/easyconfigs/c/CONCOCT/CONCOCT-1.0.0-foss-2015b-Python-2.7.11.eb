@@ -15,6 +15,8 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 
 source_urls = ['https://github.com/BinPro/CONCOCT/archive/']
 sources = ['%(version)s.tar.gz']
+checksums = ['4428a1d7bce5c7546106bea0a0ff6c2168e3680f6422adce5ef523bce46dc180'] #  1.0.0.tar.gz
+
 
 python = "Python"
 pythonversion = '2.7.1'
