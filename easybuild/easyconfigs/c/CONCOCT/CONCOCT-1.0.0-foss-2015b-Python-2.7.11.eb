@@ -26,9 +26,4 @@ dependencies = [
     ('GSL','2.3'),
 ]
 
-#sanity_check_paths = {
-#    'files': [],
-#    'dirs': ['lib/python%s/site-packages/horton' % pythonshortversion]
-#}
-
 moduleclass = 'bio'
