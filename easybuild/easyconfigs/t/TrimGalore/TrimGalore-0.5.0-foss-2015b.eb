@@ -23,7 +23,7 @@ install_cmd = "cp -a * %(installdir)s && chmod +x %(installdir)s/%(namelower)s &
 install_cmd += "sed -i '1 i#!/usr/bin/env perl' %(installdir)s/%(namelower)s"
 
 dependencies = [
-    ('FastQC', '0.11.7', '-Java-1.8.0_144-unlimited_JCE'),
+    ('FastQC', '0.11.7', '-Java-1.8.0_144-unlimited_JCE',('dummy','')),
     ('cutadapt', '1.18', '-Python-2.7.11'),
 ]
 
