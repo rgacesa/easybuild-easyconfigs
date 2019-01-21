@@ -1,6 +1,6 @@
-# 0.4.2 modified by:
-# Adam Huffman
-# The Francis Crick Institute
+# TrimGalore Easybuild block
+# by R.Gacesa (UMCG, 2019)
+#
 
 easyblock = "PackedBinary"
 
@@ -12,7 +12,7 @@ description = """A wrapper tool around Cutadapt and FastQC to consistently apply
  quality and adapter trimming to FastQ files, with some extra functionality for 
  MspI-digested RRBS-type (Reduced Representation Bisufite-Seq) libraries."""
 
-toolchain = {'name': 'intel', 'version': '2017a'}
+toolchain = {'name': 'foss', 'version': '2015a'}
 
 source_urls = ['http://www.bioinformatics.babraham.ac.uk/projects/%(namelower)s']
 sources = ['%(namelower)s_v%(version)s.zip']
@@ -23,7 +23,7 @@ install_cmd += "sed -i '1 i#!/usr/bin/env perl' %(installdir)s/%(namelower)s"
 
 dependencies = [
     ('FastQC', '0.11.7', '-Java-1.8.0_144-unlimited_JCE'),
-#    ('cutadapt', '1.13', '-Python-2.7.10'), <-- needs update
+    ('cutadapt', '1.18', '-Python-2.7.11'),
 ]
 
 sanity_check_paths = {
