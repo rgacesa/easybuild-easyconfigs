@@ -6,7 +6,7 @@ easyblock = "PythonPackage"
 
 name = 'CONCOCT'
 version = '1.0.0'
-versionsuffix = 'Python-2.7.11'
+versionsuffix = '-Python-2.7.11'
 
 homepage = 'https://github.com/BinPro/CONCOCT'
 description = """A program for unsupervised binning of metagenomic contigs by using nucleotide composition, coverage data in multiple samples and linkage data from paired end reads."""
