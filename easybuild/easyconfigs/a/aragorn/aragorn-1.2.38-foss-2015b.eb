@@ -1,0 +1,26 @@
+# easybuild for Aragorn
+# by R.Gacesa (UMCG,2019)
+#
+
+easyblock = 'MakeCp'
+name = 'aragorn'
+version = '1.2.38'
+
+homepage = "http://mbio-serv2.mbioekol.lu.se/ARAGORN/"
+description = """ARAGORN, a program to detect tRNA genes and tmRNA genes in nucleotide sequences."""
+
+toolchain = {'name': 'foss', 'version': '2015b'}
+
+source_urls = ['http://mbio-serv2.mbioekol.lu.se/ARAGORN/Downloads/']
+sources = ['aragorn-%(version)s.tgz']
+
+buildopts = 'CXX="$CXX" o=aragorn ffast-math O3' # gcc -O3 -ffast-math -finline-functions -o aragorn aragorn1.2.38.c
+
+files_to_copy = ["aragorn"]
+
+#sanity_check_paths = {
+#    'files': ['bin/%s' % x for x in ['bedtools', 'pairToBed', 'mergeBed', 'bedToBam', 'fastaFromBed']],
+#    'dirs': files_to_copy,
+#}
+
+moduleclass = 'bio'
