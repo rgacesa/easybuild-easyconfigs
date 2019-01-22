@@ -18,6 +18,8 @@ sources = ['%(name)s-%(version)s.tar.gz']
 
 checksums = ['4fb248ec5173ce93055e72d9d806f2037b4e12f10c5c643b5ba7d265bb7c1459']
 
+start_dir = 'src'
+
 dependencies = [
     ('Bowtie2', '2.3.4.1'),
     ('HMMER', '3.2.1'),
