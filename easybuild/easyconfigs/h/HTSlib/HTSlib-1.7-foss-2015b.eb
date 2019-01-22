@@ -22,6 +22,7 @@ dependencies = [
     ('bzip2', '1.0.6'),
     ('XZ', '5.2.2'),
     ('cURL', '7.47.1'),
+    ('GCC','4.8.4','',('dummy','')),           
 ]
 
 sanity_check_paths = {
