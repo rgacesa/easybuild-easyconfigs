@@ -2,8 +2,8 @@
 # by R.Gacesa (UMCG, 2019)
 # NOTES:
 # - MetaBat sources are not labelled by version, only binaries are
-#
-#
+
+easyblock = 'SCons'
 
 name = 'MetaBat'
 version = '2.12.1'
