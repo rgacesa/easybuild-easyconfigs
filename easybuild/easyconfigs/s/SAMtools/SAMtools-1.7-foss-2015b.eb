@@ -15,7 +15,7 @@ toolchainopts = {'pic': True}
 
 source_urls = ['https://github.com/samtools/%(namelower)s/releases/download/%(version)s']
 sources = [SOURCELOWER_TAR_BZ2]
-checksums = ['f76ba250e77da1e8146119e88dbd5c73898e4c108b3d3c49dd89cc25e4b92616'] #  1.7.tar.gz'
+checksums = ['e7b09673176aa32937abd80f95f432809e722f141b5342186dfef6a53df64ca1'] #  1.7.tar.gz'
 
 # The htslib component of SAMtools 1.4 uses zlib, bzip2 and lzma compression.
 # The latter is currently provided by XZ.
