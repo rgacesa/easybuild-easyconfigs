@@ -14,7 +14,7 @@ description = """This small Python module provides an xopen function that works 
 toolchain = {'name': 'foss', 'version': '2015b'}
 
 source_urls = ['https://github.com/marcelm/xopen/archive/']
-sources = [v%(version)s.tar.gz]
+sources = ['v%(version)s.tar.gz']
 
 dependencies = [('Python', '2.7.11')]
 
