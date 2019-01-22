@@ -14,7 +14,7 @@ toolchainopts = {'pic': True}
 
 source_urls = ['https://github.com/samtools/%(namelower)s/releases/download/%(version)s/']
 sources = [SOURCELOWER_TAR_BZ2]
-checksums = ['9588be8be0c2390a87b7952d644e7a88bead2991b3468371347965f2e0504ccb']
+checksums = ['be3d4e25c256acdd41bebb8a7ad55e89bb18e2fc7fc336124b1e2c82ae8886c6']
 
 # cURL added for S3 support
 dependencies = [
