@@ -19,7 +19,8 @@ checksums = ['79ea8553fa642eef722660026f98933325d49de511fcb8420f9dfbb89ea34087']
 source_urls = ['https://bitbucket.org/berkeleylab/metabat/get/']
 sources = ['master.tar.gz']
 
-builddependencies = [('SCons', '3.0.3', '-Python-2.7.11')]
+builddependencies = [('SCons', '3.0.3', '-Python-2.7.11'),
+                     ('SAMtools','1.7')]
 
 dependencies = [
     ('Boost', '1.60.0','-Python-2.7.11'),
@@ -27,7 +28,6 @@ dependencies = [
     ('GCC', '5.4.0','-2.26',('dummy','')),
     ('zlib', '1.2.11'),
     ('binutils','2.26','',('dummy','')),
-    ('SAMtools','1.7')
 ]
 
 #Requirements:
