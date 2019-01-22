@@ -15,7 +15,7 @@ checksums = ['4b84e3397755fb22cc931c0e7b9d50eaba2a680df854d7a35db46a13cecb2126']
 source_urls = ['http://mbio-serv2.mbioekol.lu.se/ARAGORN/Downloads/']
 sources = ['aragorn%(version)s.tgz']
 
-buildopts = 'CXX="$CXX" o=aragorn ffast-math O3' # gcc -O3 -ffast-math -finline-functions -o aragorn aragorn1.2.38.c
+buildopts = 'CXX="$CXX" -o=aragorn -ffast-math -O3' # gcc -O3 -ffast-math -finline-functions -o aragorn aragorn1.2.38.c
 
 files_to_copy = ["aragorn"]
 
