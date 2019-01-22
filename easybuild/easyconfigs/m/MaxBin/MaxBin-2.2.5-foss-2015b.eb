@@ -14,7 +14,7 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 
 #source_urls = ['https://sourceforge.net/projects/maxbin2/files/MaxBin-%(version)s.tar.gz/download']
 source_urls = [SOURCEFORGE_SOURCE]
-sources = ['%(name)s%(version)s.tar.gz']
+sources = ['%(name)s-%(version)s.tar.gz']
 
 checksums = ['4fb248ec5173ce93055e72d9d806f2037b4e12f10c5c643b5ba7d265bb7c1459']
 
