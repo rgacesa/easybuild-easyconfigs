@@ -1,24 +1,20 @@
+# MaxBin easybuild block
+# by: R.Gacesa (UMCG, 2019)
 #
-#
-#
-
 easyblock = 'MakeCp'
 
 name = 'MaxBin' 
 version = '2.2.5'
 
-homepage = 'https://sourceforge.net/projects/maxbin2/files/'
+homepage = 'https://sourceforge.net/projects/maxbin2/'
 description = """an automated binning algorithm to recover genomes from multiple metagenomic datasets."""
 
 toolchain = {'name': 'foss', 'version': '2015b'}
 #toolchainopts = {'usempi': True}
 
-source_urls = ['https://sourceforge.net/projects/maxbin2/files/MaxBin-%(version)s.tar.gz/download']
-sources = ['%(name)s_%(version)s.tar.gz']
-
-#https://sourceforge.net/projects/maxbin2/files/MaxBin-2.2.5.tar.gz/download
-#sources = ['%(name)s_%(version)s.tar.gz'] #axBin-2.2.5.tar.gz
-#source_urls = [('http://downloads.sourceforge.net/project/rnaseqassembly')]
+#source_urls = ['https://sourceforge.net/projects/maxbin2/files/MaxBin-%(version)s.tar.gz/download']
+source_urls = [SOURCEFORGE_SOURCE]
+sources = ['%(name)s%(version)s.tar.gz']
 
 checksums = ['4fb248ec5173ce93055e72d9d806f2037b4e12f10c5c643b5ba7d265bb7c1459']
 
