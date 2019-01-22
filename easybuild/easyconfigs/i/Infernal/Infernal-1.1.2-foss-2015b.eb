@@ -13,7 +13,7 @@ description = """Infernal ("INFERence of RNA ALignment") is for searching DNA se
 
 toolchain = {'name': 'foss', 'version': '2015b'}
 
-builddependencies = [('GCC','4.8.4')] 
+builddependencies = [('GCC','4.8.4','',('dummy',''))] 
 
 sources = [SOURCELOWER_TAR_GZ]
 source_urls = ['http://eddylab.org/%(namelower)s']
