@@ -1,0 +1,29 @@
+##
+# This file is an EasyBuild reciPY as per https://github.com/easybuilders/easybuild
+# modified by R.Gacesa (2019, UMCG)
+#
+##
+name = 'SAMtools'
+version = '1.7'
+
+homepage = 'http://www.htslib.org/'
+description = """SAM Tools provide various utilities for manipulating alignments in the SAM format, 
+ including sorting, merging, indexing and generating alignments in a per-position format."""
+
+toolchain = {'name': 'foss', 'version': '2015b'}
+toolchainopts = {'pic': True}
+
+source_urls = ['https://github.com/samtools/%(namelower)s/releases/download/%(version)s']
+sources = [SOURCELOWER_TAR_BZ2]
+checksums = ['f76ba250e77da1e8146119e88dbd5c73898e4c108b3d3c49dd89cc25e4b92616'] #  1.7.tar.gz'
+
+# The htslib component of SAMtools 1.4 uses zlib, bzip2 and lzma compression.
+# The latter is currently provided by XZ.
+dependencies = [
+    ('ncurses', '6.0'),
+    ('zlib', '1.2.8'),
+    ('bzip2', '1.0.6'),
+    ('XZ', '5.2.2'),
+]
+
+moduleclass = 'bio'
