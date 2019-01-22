@@ -23,7 +23,7 @@ builddependencies = [('SCons', '3.0.3', '-Python-2.7.11'),
                      ('SAMtools','1.7'), 
                      ('binutils','2.30','',('dummy','')),
                      ('HTSlib','1.7'),
-                     ('GCCcore','6.4.0'),'',('dummy','')),
+                     ('GCCcore','6.4.0','',('dummy','')),
                      ]
 
 dependencies = [
