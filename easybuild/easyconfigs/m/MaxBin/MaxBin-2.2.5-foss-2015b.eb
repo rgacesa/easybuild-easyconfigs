@@ -29,15 +29,15 @@ dependencies = [
 # Parallel build tends to fail.
 #parallel = 1
 
-#bm_executables = ['bmdiff', 'bmdump', 'bmfilter', 'bmtagger.sh', 'bmtool', 'extract_fullseq']
-#files_to_copy = [(['bmtagger/%s' % x for x in bm_executables], 'bin')]
+executables = ['MaxBin']
+files_to_copy = [(['bmtagger/%s' % x for x in executables], 'bin')]
 
 #
 # Check if all binaries from the suite are present.
 #
-#sanity_check_paths = {
-#    'files': ['bin/%s' % x for x in bm_executables],
-#    'dirs': [],
-#}
+sanity_check_paths = {
+    'files': ['bin/%s' % x for x in executables],
+    'dirs': [],
+}
 
 moduleclass = 'bio'
