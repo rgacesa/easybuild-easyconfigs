@@ -31,7 +31,7 @@ dependencies = [
 #parallel = 1
 
 executables = ['MaxBin']
-files_to_copy = [(['bmtagger/%s' % x for x in executables], 'bin')]
+files_to_copy = [(['%s' % x for x in executables], 'bin')]
 
 #
 # Check if all binaries from the suite are present.
