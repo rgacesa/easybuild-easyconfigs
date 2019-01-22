@@ -21,7 +21,7 @@ sources = ['master.tar.gz']
 
 builddependencies = [('SCons', '3.0.3', '-Python-2.7.11'),
                      ('SAMtools','1.7'), 
-                     ('binutils','2.30','',('dummy',''),
+                     ('binutils','2.30','',('dummy','')),
                      ]
 
 dependencies = [
