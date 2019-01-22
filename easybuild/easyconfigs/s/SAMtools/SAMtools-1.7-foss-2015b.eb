@@ -19,11 +19,16 @@ checksums = ['e7b09673176aa32937abd80f95f432809e722f141b5342186dfef6a53df64ca1']
 
 # The htslib component of SAMtools 1.4 uses zlib, bzip2 and lzma compression.
 # The latter is currently provided by XZ.
+
+# NOTES:
+# seems to require old gcc (ml GCC/4.8.4)
+
 dependencies = [
     ('ncurses', '6.0'),
     ('zlib', '1.2.8'),
     ('bzip2', '1.0.6'),
     ('XZ', '5.2.2'),
+    ('GCC','4.8.4')
 ]
 
 moduleclass = 'bio'
