@@ -1,4 +1,10 @@
-easyblock = 'SCons'
+# MetaBat easybuild recipie
+# by R.Gacesa (UMCG, 2019)
+# NOTES:
+# - MetaBat sources are not labelled by version, only binaries are
+#
+#
+
 name = 'MetaBat'
 version = '2.12.1'
 
@@ -21,7 +27,7 @@ dependencies = [
     ('GCC', '5.4.0','-2.26',('dummy','')),
     ('zlib', '1.2.11'),
     ('binutils','2.26','',('dummy','')),
-    ('SAMtools','1.5')
+    ('SAMtools','1.7')
 ]
 
 #Requirements:
