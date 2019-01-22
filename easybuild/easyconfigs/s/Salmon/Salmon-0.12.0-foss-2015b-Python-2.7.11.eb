@@ -27,7 +27,7 @@ builddependencies = [('CMake', '3.13.3')]
 dependencies = [
     #Salmon requires g++ 5.2 or greater
     ('GCC','5.4.0','-2.26',('dummy', '')),
-    ('Boost', '1.60.0','', ('foss','2015b')),
+    ('Boost', '1.55.0','', ('foss','2015b')),
     ('tbb', '2018_U3'),
     ('Jellyfish', '2.2.10'),
     ('Autoconf','2.69')
