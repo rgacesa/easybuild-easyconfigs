@@ -4,8 +4,8 @@
 
 easyblock = 'MakeCp'
 
-name = 'bmtools'
-version = '20140221'
+name = 'MaxBin' 
+version = '2.2.5'
 
 homepage = 'https://sourceforge.net/projects/maxbin2/files/'
 description = """an automated binning algorithm to recover genomes from multiple metagenomic datasets."""
