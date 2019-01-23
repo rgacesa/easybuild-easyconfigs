@@ -25,7 +25,7 @@ checksums = ['334aee43292d0b657c4849f818ddfb3ac7811eb505502bf24a01d66719084b44']
 #]
 
 dependencies = [('Java', '1.8.0_144-unlimited_JCE')]
-files_to_copy = [(['%(builddir)s/minced','%(builddir)s/minced.jar'],'bin')]
+files_to_copy = [(['minced','minced.jar'],'bin')]
 
 sanity_check_paths = {
     'dirs': ["bin"],
