@@ -16,7 +16,7 @@ MinCED is a program to find Clustered Regularly Interspaced Short Palindromic Re
 
 toolchain = {'name': 'dummy', 'version': ''}
 
-source_urls = ['https://github.com/ctSkennerton/minced/releases']
+source_urls = ['https://github.com/ctSkennerton/minced/archive']
 sources = ['%(version)s.tar.gz']
 checksums = ['334aee43292d0b657c4849f818ddfb3ac7811eb505502bf24a01d66719084b44'] #  0.3.2.tar.gz
 
