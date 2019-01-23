@@ -19,7 +19,7 @@ cmds_map = [('.*', "$CXX $CXXFLAGS $LDFLAGS -o aragorn *.c")]
 files_to_copy = [(['aragorn'], 'bin')]
 sanity_check_paths = {
     'files': ['bin/aragorn'],
-#    'dirs': [''],
+    'dirs': [],
 }
 
 moduleclass = 'bio'
