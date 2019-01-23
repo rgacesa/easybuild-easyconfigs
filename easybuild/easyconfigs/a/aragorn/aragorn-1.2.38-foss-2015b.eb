@@ -14,17 +14,12 @@ checksums = ['4b84e3397755fb22cc931c0e7b9d50eaba2a680df854d7a35db46a13cecb2126']
 source_urls = ['http://mbio-serv2.mbioekol.lu.se/ARAGORN/Downloads/']
 sources = ['aragorn%(version)s.tgz']
 
-#skipsteps = ['source']
-#buildopts = 'CXX="$CXX" -o=aragorn -ffast-math -O3' # gcc -O3 -ffast-math -finline-functions -o aragorn aragorn1.2.38.c
-
 cmds_map = [('.*', "$CXX $CXXFLAGS $LDFLAGS -o aragorn *.c")]
 
 files_to_copy = [(['aragorn'], 'bin')]
-
-
-#sanity_check_paths = {
-#    'files': ['bin/%s' % x for x in ['bedtools', 'pairToBed', 'mergeBed', 'bedToBam', 'fastaFromBed']],
-#    'dirs': files_to_copy,
-#}
+sanity_check_paths = {
+    'files': ['bin/aragorn'],
+#    'dirs': [''],
+}
 
 moduleclass = 'bio'
