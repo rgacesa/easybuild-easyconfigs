@@ -29,7 +29,7 @@ files_to_copy = [(['minced','minced.jar'],'bin')]
 
 sanity_check_paths = {
     'dirs': ["bin"],
-    'files': ['bin/minced','bin/mincer.jar'],
+    'files': ['bin/minced','bin/minced.jar'],
 }
 
 moduleclass = 'bio'
