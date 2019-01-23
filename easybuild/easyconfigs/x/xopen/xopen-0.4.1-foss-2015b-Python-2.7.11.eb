@@ -1,6 +1,5 @@
 # Easybuild block for python package xopen
 # by: R.Gacesa (UMCG, 2019)
-#
 
 easyblock = 'PythonPackage'
 

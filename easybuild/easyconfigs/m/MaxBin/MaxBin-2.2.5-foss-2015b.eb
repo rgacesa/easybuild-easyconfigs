@@ -13,6 +13,9 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 #toolchainopts = {'usempi': True}
 
 #source_urls = ['https://sourceforge.net/projects/maxbin2/files/MaxBin-%(version)s.tar.gz/download']
+# /home/umcg-rgacesa/ebtests/apps/software/HTSlib/1.7-foss-2015b
+
+
 source_urls = [SOURCEFORGE_SOURCE]
 sources = ['%(name)s-%(version)s.tar.gz']
 
