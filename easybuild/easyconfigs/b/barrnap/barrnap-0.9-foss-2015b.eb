@@ -19,7 +19,7 @@ checksums = ['36c27cd4350531d98b3b2fb7d294a2d35c15b7365771476456d7873ba33cce15']
 
 dependencies = [
     ('HMMER', '3.2.1',''),
-    ('BEDTools', '2.25',''),
+    ('BEDTools', '2.25.0',''),
     ('PerlPlus', '5.26.2','-v18.05.1'),
 ]
 
