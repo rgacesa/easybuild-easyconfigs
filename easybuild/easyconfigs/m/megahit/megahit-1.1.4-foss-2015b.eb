@@ -14,7 +14,6 @@ description = """MEGAHIT: An ultra-fast single-node solution for large and compl
 toolchain = {'name': 'foss', 'version': '2015b'}
 toolchainopts = {'usempi': True}
 
-#https://github.com/voutcn/megahit/archive/v1.1.4.tar.gz
 source_urls = ['https://github.com/voutcn/megahit/archive/']
 sources =[('v%s.tar.gz' % (version))]
 checksums = [
