@@ -1,7 +1,7 @@
 # Easybuild for barrnap
 # By: R.Gacesa (UMCG, 2019)
 
-easyblock = 'BinariesTarball'
+easyblock = 'MakeCp'
 
 name = 'barrnap'
 version = '0.9'
@@ -23,10 +23,10 @@ dependencies = [
     ('PerlPlus', '5.26.2','-v18.05.1'),
 ]
 
-#skipsteps = ['source']
+skipsteps = ['configure','source','make','build']
 #cmds_map = [('FastTree.*.c', '$CC -DOPENMP $CFLAGS $LIBS %%(source)s -o %(name)s')]
 
-#files_to_copy = ['bin','binaries','build','db','example'],
+files_to_copy = ['bin','binaries','build','db','example'],
 install_cmd = "cp -r %(builddir)s/* %(installdir)s"
 
 sanity_check_paths = {
