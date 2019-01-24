@@ -7,7 +7,7 @@
 # $Id$
 ##
 name = 'OCaml'
-version = '4.02.3'
+version = '4.05.0'
 
 homepage = 'http://ocaml.org/'
 description = """OCaml is a general purpose industrial-strength programming language
