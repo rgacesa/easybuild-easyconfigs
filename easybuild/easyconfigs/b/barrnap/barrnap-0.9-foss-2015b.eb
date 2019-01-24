@@ -1,14 +1,13 @@
 # Easybuild for barrnap
 # By: R.Gacesa (UMCG, 2019)
 
-easyblock = 'MakeCp'
+easyblock = 'Binary'
 
 name = 'barrnap'
 version = '0.9'
-
 homepage = 'https://github.com/tseemann/barrnap'
-description = """Barrnap predicts the location of ribosomal RNA genes in genomes. 
-It supports bacteria (5S,23S,16S), archaea (5S,5.8S,23S,16S), 
+description = """Barrnap predicts the location of ribosomal RNA genes in genomes.
+It supports bacteria (5S,23S,16S), archaea (5S,5.8S,23S,16S),
 metazoan mitochondria (12S,16S) and eukaryotes (5S,5.8S,28S,18S)."""
 
 toolchain = {'name': 'foss', 'version': '2015b'}
@@ -26,7 +25,7 @@ dependencies = [
 skipsteps = ['configure','make','build']
 #cmds_map = [('FastTree.*.c', '$CC -DOPENMP $CFLAGS $LIBS %%(source)s -o %(name)s')]
 
-files_to_copy = ['bin','binaries','build','db','example'],
+files_to_copy = [('bin/*','bin'),('binaries/*','binaries'),('build/*','build'),('db','db'),('example','example')],
 install_cmd = "cp -r %(builddir)s/* %(installdir)s"
 
 sanity_check_paths = {
