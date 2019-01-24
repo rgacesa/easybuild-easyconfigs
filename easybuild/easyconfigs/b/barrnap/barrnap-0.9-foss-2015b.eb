@@ -26,7 +26,8 @@ dependencies = [
 #skipsteps = ['source']
 #cmds_map = [('FastTree.*.c', '$CC -DOPENMP $CFLAGS $LIBS %%(source)s -o %(name)s')]
 
-files_to_copy = ['bin','binaries','build','db','example'],
+#files_to_copy = ['bin','binaries','build','db','example'],
+install_cmd = "cp -r %(builddir)s/* %(installdir)s"
 
 sanity_check_paths = {
     'files': ['bin/barrnap'],
