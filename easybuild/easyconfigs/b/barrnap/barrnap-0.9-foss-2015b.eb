@@ -23,7 +23,7 @@ dependencies = [
     ('PerlPlus', '5.26.2','-v18.05.1'),
 ]
 
-skipsteps = ['configure','source','make','build']
+skipsteps = ['configure','make','build']
 #cmds_map = [('FastTree.*.c', '$CC -DOPENMP $CFLAGS $LIBS %%(source)s -o %(name)s')]
 
 files_to_copy = ['bin','binaries','build','db','example'],
