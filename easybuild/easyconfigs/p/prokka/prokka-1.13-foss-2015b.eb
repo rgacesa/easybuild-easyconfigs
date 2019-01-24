@@ -21,23 +21,13 @@ dependencies = [('PerlPlus','5.26.2','-v18.05.1'),
                 ('BLAST+','2.7.1',''), 
                 ('HMMER','3.2.1', ''),
                 ('parallel','20151222',''), 
-                (), 
-                ()
+                ('aragorn','1.2.38'), 
+                ('prodigal','2.6.3'),
+                ('tbl2asn','25.7','',('dummy','')),
+                ('Infernal','1.1.2'),
+                ('barrnap','0.9'),
+                ('minced','0.3.2','-Java-1.8.0_144', ('dummy',''))
                ]
-
-#BioPerl >= 1.6.2
-#BLAST+ >= 2.2
-#HMMER >= 3.1
-#  Aragorn >= 1.2
-#  Prodigal >= 2.0 and <= 2.7
-#  tbl2asn >= 23.0
-#  GNU Parallel >= 20130422
-#Infernal >= 1.1
-#Recommended
-#  Barrnap >= 0.4 (fast rRNA searching using NHMMER)
-#  MINCED => 0.1.6 (find CRISPRs)
-
-
 modextrapaths = {
     'PATH': '',
 }
