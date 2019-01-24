@@ -5,7 +5,7 @@
 easyblock = 'Tarball'
 
 name = 'prokka'
-version = '1.13'
+version = '1.13.4'
 #bioperl_ver = '1.7.0'
 #versionsuffix = '-BioPerl-%s' % bioperl_ver
 
@@ -41,6 +41,10 @@ sanity_check_paths = {
     'files': ['bin/%s' % x for x in bin_files] + ['binaries/linux/aragorn', 'db/cm/Bacteria', 'doc/ToDoList.txt'],
     'dirs': ['bin', 'binaries', 'db',  'db/cm', 'db/genus', 'db/hmm', 'db/kingdom', 'doc'],
 }
+
+# we need to fix perl stuff after install
+
+
 
 modloadmsg = "prokka scripts are located in $EBROOTPROKKA/bin; databases are located in $EBROOTPROKKA/db\n"
 
