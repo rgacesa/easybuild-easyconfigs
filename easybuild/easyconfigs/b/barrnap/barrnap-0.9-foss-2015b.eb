@@ -26,7 +26,7 @@ dependencies = [
 #skipsteps = ['configure','make','build']
 #cmds_map = [('FastTree.*.c', '$CC -DOPENMP $CFLAGS $LIBS %%(source)s -o %(name)s')]
 
-install_cmd = "tar xfvz %(namelower)s*.tar.gz && "
+install_cmd = "tar xfvz %(version)s.tar.gz && "
 install_cmd += "cp -a %(builddir)s/* %(installdir)s"
 
 #files_to_copy = ['bin','binaries','build','db','example'],
