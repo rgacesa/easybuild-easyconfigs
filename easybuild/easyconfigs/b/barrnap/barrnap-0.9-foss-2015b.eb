@@ -1,8 +1,7 @@
 # Easybuild for barrnap
 # By: R.Gacesa (UMCG, 2019)
 
-easyblock = 'Binary'
-
+easyblock = 'BinariesTarball'
 name = 'barrnap'
 version = '0.9'
 homepage = 'https://github.com/tseemann/barrnap'
