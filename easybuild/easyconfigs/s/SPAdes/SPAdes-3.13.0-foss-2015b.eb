@@ -1,7 +1,6 @@
 # ==============================================================
 # SPAdes assembler easybuilder
 # by R.Gacesa (UMCG,2019)
-#
 # ==============================================================
 
 easyblock = "CMakeMake"
@@ -10,14 +9,15 @@ name = 'SPAdes'
 version = '3.13.0'
 
 homepage = 'http://cab.spbu.ru/software/spades/'
-description = """Genome and metagenome assembler"""
+description = """Genome and metagenome assembler; The current version of SPAdes works with Illumina or IonTorrent reads and is capable of providing hybrid assemblies using PacBio, Oxford Nanopore and Sanger reads. You can also provide additional contigs that will be used as long reads.
+
+Version 3.13.0 of SPAdes supports paired-end reads, mate-pairs and unpaired reads. SPAdes can take as input several paired-end and mate-pair libraries simultaneously. Note, that SPAdes was initially designed for small genomes. It was tested on bacterial (both single-cell MDA and standard isolates), fungal and other small genomes."""
 
 toolchain = {'name': 'foss', 'version': '2015b'}
 # source
-# http://cab.spbu.ru/files/release3.13.0/SPAdes-3.13.0.tar.gz
 source_urls = ['http://cab.spbu.ru/files/release%(version)s']
 sources = ['SPAdes-%(version)s.tar.gz']
-checksums = ['c63442248c4c712603979fa70503c2bff82354f005acda2abc42dd5598427040']  # SPAdes-3.13.0.tar.gz]
+checksums = ['c63442248c4c712603979fa70503c2bff82354f005acda2abc42dd5598427040']  # SPAdes-3.13.0.tar.gz
 
 # dependencies
 builddependencies = [('CMake', '3.7.2')]
