@@ -5,6 +5,7 @@ easyblock = 'PythonPackage'
 
 name = 'QUAST'
 version = '5.0.2'
+versionsuffix = '-Python-2.7.11'
 
 homepage = 'https://github.com/ablab/%(namelower)s'
 description = """QUAST evaluates genome assemblies by computing various metrics.
