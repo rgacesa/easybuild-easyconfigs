@@ -1,8 +1,7 @@
-##
-#This file is an EasyBuild reciPY as per https://github.com/hpcugent/easybuild
-#
-# by R.Gacesa (2019,UMCG)
-##
+# This file is an EasyBuild reciPY,
+#   adapted from  as per https://github.com/hpcugent/easybuild
+# by: R.Gacesa (2019,UMCG)
+
 easyblock = "PythonPackage"
 
 name = 'DendroPy'
@@ -16,6 +15,8 @@ reading, writing, simulation, processing and manipulation of phylogenetic trees
 toolchain = {'name': 'foss', 'version': '2015b'}
 source_urls = ['https://pypi.python.org/packages/source/D/DendroPy/']
 sources = [SOURCE_TAR_GZ]
+
+checksums = ['f0a0e2ce78b3ed213d6c1791332d57778b7f63d602430c1548a5d822acf2799c'] #DendroPy-4.4.0.tar.gz
 
 python = "Python"
 pythonversion = '2.7.11'
