@@ -1,5 +1,6 @@
 # easybuild for Aragorn
 # by R.Gacesa (UMCG,2019)
+# =======================
 
 easyblock = 'CmdCp'
 name = 'aragorn'
