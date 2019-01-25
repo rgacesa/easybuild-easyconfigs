@@ -1,6 +1,6 @@
-##
-# This file is an EasyBuild reciPY as per https://github.com/easybuilders/easybuild
-##
+# This file is an EasyBuild reciPY,
+#    adapted form  https://github.com/easybuilders/easybuild
+# by: R.Gacesa (UMCG, 2019)
 
 easyblock = 'ConfigureMake'
 
