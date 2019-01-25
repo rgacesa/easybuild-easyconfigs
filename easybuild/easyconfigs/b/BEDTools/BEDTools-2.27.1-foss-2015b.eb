@@ -1,4 +1,5 @@
-# This file is an EasyBuild reciPY as per https://github.com/easybuilders/easybuild
+# This file is an EasyBuild reciPY adapted from
+#  https://github.com/easybuilders/easybuild
 # Author: R.Gacesa (UMCG, 2019)
 
 easyblock = 'MakeCp'
