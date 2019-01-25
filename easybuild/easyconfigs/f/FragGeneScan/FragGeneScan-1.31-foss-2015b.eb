@@ -1,6 +1,7 @@
 # Easybuild block for FragGeneScan
 # by: R.Gacesa (2019, UMCG)
-#
+# ===================================
+
 easyblock = 'MakeCp'
 
 name = 'FragGeneScan'
