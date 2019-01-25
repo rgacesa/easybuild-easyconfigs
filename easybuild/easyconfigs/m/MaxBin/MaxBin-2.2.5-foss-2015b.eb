@@ -1,6 +1,7 @@
 # MaxBin easybuild block
 # by: R.Gacesa (UMCG, 2019)
-#
+# ===============================
+
 easyblock = 'MakeCp'
 
 name = 'MaxBin' 
@@ -10,11 +11,6 @@ homepage = 'https://sourceforge.net/projects/maxbin2/'
 description = """an automated binning algorithm to recover genomes from multiple metagenomic datasets."""
 
 toolchain = {'name': 'foss', 'version': '2015b'}
-#toolchainopts = {'usempi': True}
-
-#source_urls = ['https://sourceforge.net/projects/maxbin2/files/MaxBin-%(version)s.tar.gz/download']
-# /home/umcg-rgacesa/ebtests/apps/software/HTSlib/1.7-foss-2015b
-
 
 source_urls = [SOURCEFORGE_SOURCE]
 sources = ['%(name)s-%(version)s.tar.gz']
