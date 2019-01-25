@@ -15,6 +15,8 @@ toolchain = {'name': 'foss', 'version': '2015b'}
 source_urls = ['https://github.com/tseemann/prokka/archive/']
 sources = ['v%(version)s.zip']
 
+checksums = ['b5621af689ffb5348eab699a378d45d7566cd63a7da52845229b484af33ea8e2'] #  v1.13.4.zip
+
 dependencies = [('BioPerl','1.6.924','-Perl-5.22.0'),
                 ('BLAST+','2.7.1',''), 
                 ('HMMER','3.2.1', ''),
