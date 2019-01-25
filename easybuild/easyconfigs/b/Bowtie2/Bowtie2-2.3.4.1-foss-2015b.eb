@@ -1,3 +1,7 @@
+# Bowtie2 easybuild
+# adapted from previous versions of Bowtie2 easybuild files
+# ===========================================
+
 name = 'Bowtie2'
 version = '2.3.4.1'
 
