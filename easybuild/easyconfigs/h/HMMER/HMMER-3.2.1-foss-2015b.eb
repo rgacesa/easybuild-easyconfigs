@@ -1,9 +1,6 @@
-##
-# Copyright:: RGacesa, UMCG, 2018
-# Authors::   R.Gacesa <r.gacesa@umcg.nl>
-# License::   MIT/GPL
-# $Id$
-##
+# Easybuild for HMMER
+# By:   R.Gacesa (2019, UMCG)
+# =========================================
 
 easyblock = 'ConfigureMake'
 
@@ -21,8 +18,6 @@ description = """HMMER is used for searching sequence databases for homologs of 
  essentially as fast as BLAST."""
 
 toolchain = {'name': 'foss', 'version': '2015b'}
-
-#http://eddylab.org/software/hmmer/hmmer-3.2.1.tar.gz
 
 source_urls = ['http://eddylab.org/software/hmmer']
 sources = ['hmmer-%(version)s.tar.gz']
