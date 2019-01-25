@@ -1,11 +1,6 @@
-##
-# easybuild for Prodigal tool (2.6.3)
-# ======================================
-# Copyright:: RGacesa, UMCG, 2018
-# Authors::   R.Gacesa <r.gacesa@umcg.nl>
-# License::   MIT/GPL
-# $Id$
-##
+# Easybuilder for Prodigal
+# By: R.Gacesa (UMCG, 2019)
+# ===============================
 
 easyblock = 'MakeCp'
 
