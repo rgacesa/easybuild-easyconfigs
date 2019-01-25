@@ -25,6 +25,9 @@ dependencies = [
 
 osdependencies = [('openssl-devel', 'libssl-dev', 'libopenssl-devel')]
 
+# there seems to be something wierd with parallel build
+parallel = 1
+
 sanity_check_paths = {
     'files': ["bin/%s" % x for x in ['ccmake', 'cmake', 'cpack', 'ctest']],
     'dirs': [],
