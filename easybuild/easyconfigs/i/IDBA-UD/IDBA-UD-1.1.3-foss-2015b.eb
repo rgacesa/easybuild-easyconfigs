@@ -1,6 +1,6 @@
-# This file is an EasyBuild block, modified from https://github.com/easybuilders/easybuild
-# Software: IDBA-UD
-# Author: R.Gacesa (UMCG, 2019)
+# This file is an EasyBuild block for IDBA-UD,
+#     modified from https://github.com/easybuilders/easybuild
+# By: R.Gacesa (UMCG, 2019)
 
 # "make install" doesnt copy all the compiled binaries so we use the "MakeCp" easyblock
 # to be sure everything is copied and we run ./configure in premakeopts
