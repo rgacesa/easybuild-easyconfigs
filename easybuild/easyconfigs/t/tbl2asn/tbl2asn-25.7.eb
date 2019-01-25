@@ -1,4 +1,5 @@
-# This file is an EasyBuild reciPY as per https://github.com/hpcugent/easybuild
+# This file is an EasyBuild 
+#  adapted from reciPY as per https://github.com/hpcugent/easybuild
 # By: R.Gacesa (UMCG, 2019)
 
 easyblock = "BinariesTarball"
@@ -10,7 +11,7 @@ homepage = 'https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/'
 description = """
 Tbl2asn is a command-line program that automates the creation of sequence records for submission to GenBank. It uses many of the same functions as Sequin but is driven generally by data files. Tbl2asn generates .sqn files for submission to GenBank. Additional manual editing is not required before submission
 """ 
-# NOTE: it is ugly little binary that is distributed by NCBI without versions, source or anything else 
+# NOTE: it is an ugly little binary that is distributed by NCBI without versions, source or anything else 
 toolchain = {'name': 'dummy', 'version': 'dummy'}
 
 source_urls = ['ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/']
