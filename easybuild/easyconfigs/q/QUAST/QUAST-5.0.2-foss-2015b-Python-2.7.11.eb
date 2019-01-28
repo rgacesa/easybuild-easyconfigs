@@ -24,7 +24,7 @@ install_target = 'install_full'
 
 dependencies = [
     ('PythonPlus', '2.7.11','-v17.06.1'),
-    ('PerlPlus','5.26.2' '-v18.05.1'),
+    ('PerlPlus','5.26.2' '',('foss-2015b','-v18.05.1')),
     ('matplotlib', '1.5.1', '-Python-2.7.11'),
     ('Java', '1.8.0_144', '-unlimited_JCE', ('dummy','')),
     ('Boost', '1.60.0', '-Python-2.7.11'),
